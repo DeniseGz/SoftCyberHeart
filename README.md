@@ -1,9 +1,9 @@
 <div align="center">
 
-# ♡ Soft Cyber Heart ♡
+# ♡ `Soft Cyber Heart` ♡
 
   <p align="center">
-    <strong>An interactive 3D Canvas animation rendered in a Soft Pink Cyberpunk aesthetic.</strong>
+    <strong>`An interactive 3D Canvas animation rendered in a Soft Pink Cyberpunk aesthetic.`</strong>
   </p>
 
   <p align="center">
@@ -20,43 +20,43 @@
     <img src="https://img.shields.io/badge/Aesthetic-Soft_Pink_Cyber-FFB3CF?style=flat-square&logoColor=black" />
   </p>
 
-  <sub>Created & Maintained with ♡ by <strong>DeniseGz</strong></sub>
+  <sub>`Created & Maintained with ♡ by` <strong>`DeniseGz`</strong></sub>
 
 ---
 
 </div>
 
-## 🌸 Overview
+## 🌸 `Overview`
 
-**Soft Cyber Heart** is a standalone interactive 3D Canvas visualization created by **DeniseGz**. It seamlessly combines a futuristic *cyberpunk/sci-fi* aesthetic with soft pastel pink tones (`#ffb3cf`).
+`Soft Cyber Heart` `is a standalone interactive 3D Canvas visualization created by` `DeniseGz`. `It seamlessly combines a futuristic` `cyberpunk/sci-fi` `aesthetic with` `soft pastel pink` (`#ffb3cf`) `tones.`
 
 > *"The only non-zero deviance"* — `denisegz v2.6`
 
 ---
 
-## ✨ Features & Gadgets
+## ✨ `Features & Gadgets`
 
-- ⚙️ **Persistent 3D Heart Mesh:** A dense high-precision structure built from repeating *"i love you"* parametric typography.
-- 🎀 **Soft Pastel Pink Aesthetic:** Delicately tuned color palette designed for a sleek, glowing visual experience.
-- 📡 **Cyber HUD Overlay:** CRT scanline effects, a holographic perspective grid, corner targeting brackets, and custom telemetry metrics.
-- 🤍 **Floating Micro-Particles:** Ambient orbiting mini hearts and data bits swirling in 3D space.
-- ⚡ **Lightweight & Standalone:** Zero external dependencies—runs smoothly in any HTML5 browser or Google Colab environment.
+- ⚙️ `Persistent 3D Heart Mesh:` `A dense high-precision structure built from repeating` `"i love you"` `parametric typography.`
+- 🎀 `Soft Pastel Pink Aesthetic:` `Delicately tuned color palette designed for a sleek, glowing visual experience.`
+- 📡 `Cyber HUD Overlay:` `CRT scanline effects, a holographic perspective grid, corner targeting brackets, and custom telemetry metrics.`
+- 🤍 `Floating Micro-Particles:` `Ambient orbiting mini hearts and data bits swirling in 3D space.`
+- ⚡ `Lightweight & Standalone:` `Zero external dependencies—runs smoothly in any HTML5 browser or Google Colab environment.`
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## 🛠️ `Tech Stack & Tools`
 
-| Tool / Tech | Usage | Style / Color |
+| `Tool / Tech` | `Usage` | `Style / Color` |
 | :--- | :--- | :--- |
-| **HTML5 Canvas** | 3D Perspective Projection & Rendering | `Soft Pink (#ffb3cf)` |
-| **Vanilla JavaScript** | Animation Loop & Particle Physics | `Pastel Pink (#ffd1e3)` |
-| **CSS3** | CRT Scanlines & HUD Interface Overlay | `Blush Pink (#ffe3ed)` |
-| **Google Colab / Jupyter** | Python Inline HTML Display Engine | `Rose Pink (#ffccd5)` |
+| **`HTML5 Canvas`** | `3D Perspective Projection & Rendering` | `Soft Pink (#ffb3cf)` |
+| **`Vanilla JavaScript`** | `Animation Loop & Particle Physics` | `Pastel Pink (#ffd1e3)` |
+| **`CSS3`** | `CRT Scanlines & HUD Interface Overlay` | `Blush Pink (#ffe3ed)` |
+| **`Google Colab / Jupyter`** | `Python Inline HTML Display Engine` | `Rose Pink (#ffccd5)` |
 
 ---
 
 <div align="center">
 
-  <sub>Designed and developed by <strong>DeniseGz</strong> © 2026</sub>
+  <sub>`Designed and developed by` <strong>`DeniseGz`</strong> `© 2026`</sub>
 
 </div>
