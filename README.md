@@ -28,7 +28,7 @@
 
 ## 🌸 Overview
 
-**Soft Cyber Heart** ha'e peteĩ visualización 3D Canvas hi'anteva, apopyre **DeniseGz** rembiapokuégui. Ocombina peteĩ estética *cyberpunk/sci-fi* ha umi tono *soft pastel pink* (`#ffb3cf`).
+**Soft Cyber Heart** is a standalone interactive 3D Canvas visualization created by **DeniseGz**. It seamlessly combines a futuristic *cyberpunk/sci-fi* aesthetic with soft pastel pink tones (`#ffb3cf`).
 
 > *"The only non-zero deviance"* — `denisegz v2.6`
 
@@ -36,11 +36,11 @@
 
 ## ✨ Features & Gadgets
 
-- ⚙️ **Persistent 3D Heart Mesh:** Formación denso-va ha hekoitévandi apopyre *"i love you"* frase-kuéra reheve.
-- 🎀 **Soft Pastel Pink Aesthetic:** Tono pastel rosa visualmente delicado ha iporãva.
-- 📡 **Cyber HUD Overlay:** Líneas de escaneo CRT, retícula holográfica, marcador kuéra esquinas-pe ha métricas *DeniseGz* téra reheve.
-- 🤍 **Floating Micro-Particles:** Mini corazones ha bits digitales jerére jerépe oveveva.
-- ⚡ **Lightweight & Standalone:** No necesita dependencias externas, funciona directamente en HTML5 o Google Colab.
+- ⚙️ **Persistent 3D Heart Mesh:** A dense high-precision structure built from repeating *"i love you"* parametric typography.
+- 🎀 **Soft Pastel Pink Aesthetic:** Delicately tuned color palette designed for a sleek, glowing visual experience.
+- 📡 **Cyber HUD Overlay:** CRT scanline effects, a holographic perspective grid, corner targeting brackets, and custom telemetry metrics.
+- 🤍 **Floating Micro-Particles:** Ambient orbiting mini hearts and data bits swirling in 3D space.
+- ⚡ **Lightweight & Standalone:** Zero external dependencies—runs smoothly in any HTML5 browser or Google Colab environment.
 
 ---
 
@@ -55,4 +55,8 @@
 
 ---
 
-*Designed and developed by DeniseGz © 2026*
+<div align="center">
+
+  <sub>Designed and developed by <strong>DeniseGz</strong> © 2026</sub>
+
+</div>
