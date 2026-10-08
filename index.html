@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soft Cyber Heart - DeniseGz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Poppins:wght@300;400&display=swap">
+
+<style>
+  * { box-sizing: border-box; }
+  body { 
+    margin: 0; 
+    background-color: #030108; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Share Tech Mono', monospace; 
+  }
+  
+  #canvas-container {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .scanlines {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(
+      rgba(255, 179, 207, 0.03) 50%, 
+      rgba(0, 0, 0, 0.3) 50%
+    );
+    background-size: 100% 4px;
+    z-index: 8;
+    pointer-events: none;
+  }
+
+  .hud-element {
+    position: absolute;
+    font-size: 9px;
+    color: rgba(255, 179, 207, 0.6);
+    letter-spacing: 1.5px;
+    pointer-events: none;
+    z-index: 12;
+    text-shadow: 0 0 6px rgba(255, 179, 207, 0.4);
+  }
+  .hud-tl { top: 15px; left: 20px; }
+  .hud-tr { top: 15px; right: 20px; text-align: right; }
+  .hud-bl { bottom: 15px; left: 20px; }
+  .hud-br { bottom: 15px; right: 20px; text-align: right; }
+
+  .hud-bracket {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgba(255, 179, 207, 0.5);
+    pointer-events: none;
+    z-index: 12;
+    box-shadow: 0 0 4px rgba(255, 179, 207, 0.3);
+  }
+  .b-tl { top: 10px; left: 10px; border-right: none; border-bottom: none; }
+  .b-tr { top: 10px; right: 10px; border-left: none; border-bottom: none; }
+  .b-bl { bottom: 10px; left: 10px; border-right: none; border-top: none; }
+  .b-br { bottom: 10px; right: 10px; border-left: none; border-top: none; }
+
+  #center-phrase {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: rgba(255, 227, 237, 0.35);
+    text-shadow: 0 0 8px rgba(255, 179, 207, 0.4);
+    pointer-events: none;
+    user-select: none;
+    z-index: 10;
+    white-space: nowrap;
+    animation: floatingCenter 5s ease-in-out infinite;
+  }
+
+  @keyframes floatingCenter {
+    0%, 100% {
+      transform: translate(-50%, -50%) translateY(-3px) scale(0.97);
+      opacity: 0.25;
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(3px) scale(1.03);
+      opacity: 0.45;
+    }
+  }
+</style>
+</head>
+<body>
+  <div id="canvas-container">
+    <div class="scanlines"></div>
+    
+    <div class="hud-bracket b-tl"></div>
+    <div class="hud-bracket b-tr"></div>
+    <div class="hud-bracket b-bl"></div>
+    <div class="hud-bracket b-br"></div>
+
+    <div class="hud-element hud-tl">AUTHOR: DENISEGZ<br>SYS.CORE // 0x7F</div>
+    <div class="hud-element hud-tr">FREQ: 60.0HZ<br>SYNC: 100%</div>
+    <div class="hud-element hud-bl">GRID: ON<br>LOC: [0.0, 0.0]</div>
+    <div class="hud-element hud-br">The only non-zero deviance<br>denisegz v2.6 // SOFT_PINK</div>
+
+    <canvas id="heartCanvas"></canvas>
+    <div id="center-phrase">i love you</div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('heartCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = 600;
+    canvas.height = 500;
+
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+
+    const totalWords = 160;
+    const words = [];
+    for (let i = 0; i < totalWords; i++) {
+      const t = (i / totalWords) * Math.PI * 2;
+      words.push({ t: t, text: 'i love you', i: i });
+    }
+
+    const numMiniHearts = 45;
+    const miniHearts = [];
+    for (let i = 0; i < numMiniHearts; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      const radius = 20 + Math.random() * 65;
+      miniHearts.push({
+        angle: angle,
+        radius: radius,
+        size: 6 + Math.random() * 4,
+        speed: 0.003 + Math.random() * 0.005,
+        phase: Math.random() * Math.PI * 2,
+        isByte: Math.random() > 0.75
+      });
+    }
+
+    let angleY = 0;
+
+    function drawCyberGrid() {
+      ctx.save();
+      ctx.strokeStyle = 'rgba(255, 179, 207, 0.06)';
+      ctx.lineWidth = 1;
+
+      const horizon = centerY + 180;
+
+      for (let x = -300; x <= 900; x += 40) {
+        ctx.beginPath();
+        ctx.moveTo(x, canvas.height);
+        ctx.lineTo(centerX + (x - centerX) * 0.2, horizon);
+        ctx.stroke();
+      }
+
+      for (let y = horizon; y <= canvas.height; y += 12) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(canvas.width, y);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    function render() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      drawCyberGrid();
+
+      angleY += 0.009;
+
+      miniHearts.forEach((h) => {
+        h.phase += h.speed;
+        h.angle += 0.002;
+        
+        const dynamicRadius = h.radius + Math.sin(h.phase) * 6;
+        const x = Math.cos(h.angle) * dynamicRadius;
+        const y = Math.sin(h.angle) * (dynamicRadius * 0.72) + Math.sin(h.phase) * 4;
+        const currentAlpha = (Math.sin(h.phase) + 1) / 2 * 0.65 + 0.15;
+
+        ctx.save();
+        ctx.fillStyle = `rgba(255, 227, 237, ${currentAlpha})`;
+        ctx.shadowColor = 'rgba(255, 179, 207, 0.5)';
+        ctx.shadowBlur = 4;
+
+        if (h.isByte) {
+          ctx.fillRect(centerX + x, centerY + y, 2, 2);
+        } else {
+          ctx.font = `${h.size}px 'Share Tech Mono', monospace`;
+          ctx.fillText('♥', centerX + x, centerY + y);
+        }
+        ctx.restore();
+      });
+
+      words.forEach(w => {
+        const x3d = 16 * Math.pow(Math.sin(w.t), 3) * 12.5;
+        const y3d = -(13 * Math.cos(w.t) - 5 * Math.cos(2*w.t) - 2 * Math.cos(3*w.t) - Math.cos(4*w.t)) * 12.5;
+        const z3d = Math.sin(w.t * 3) * 18;
+
+        const cosY = Math.cos(angleY);
+        const sinY = Math.sin(angleY);
+        const rotX = x3d * cosY + z3d * sinY;
+        const rotZ = -x3d * sinY + z3d * cosY;
+
+        const perspective = 400 / (400 + rotZ);
+        const projX = centerX + rotX * perspective;
+        const projY = centerY + y3d * perspective;
+
+        const pulse = (Math.sin(Date.now() * 0.002 + w.i * 0.08) + 1) / 2;
+        const alpha = 0.55 + pulse * 0.45;
+
+        ctx.save();
+        ctx.translate(projX, projY);
+        ctx.scale(perspective, perspective);
+
+        ctx.font = '400 10px "Share Tech Mono", monospace';
+        ctx.fillStyle = `rgba(255, 179, 207, ${alpha})`;
+        ctx.shadowColor = 'rgba(255, 179, 207, 0.6)';
+        ctx.shadowBlur = 5;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        ctx.fillText(w.text, 0, 0);
+        ctx.restore();
+      });
+
+      requestAnimationFrame(render);
+    }
+
+    render();
+  </script>
+</body>
+</html>
