@@ -28,7 +28,7 @@
 
 ## 🌸 Overview
 
-**Soft Cyber Heart** is an interactive 3D Canvas visual animation created by **DeniseGz**. It seamlessly blends a retro-futuristic *cyberpunk/sci-fi* HUD theme with a delicate *soft pastel pink* palette (`#ffb3cf`).
+**Soft Cyber Heart** is an interactive 3D Canvas visual animation created by **DeniseGz**. It combines a *cyberpunk/sci-fi* aesthetic with *soft pastel pink* tones (`#ffb3cf`).
 
 > *"The only non-zero deviance"* — `denisegz v2.6`
 
@@ -36,11 +36,11 @@
 
 ## ✨ Features & Gadgets
 
-- ⚙️ **Persistent 3D Heart Mesh:** High-density parametric point formation built entirely from rendered *"i love you"* text strings.
-- 🎀 **Soft Pastel Pink Aesthetic:** Visually refined pastel palette designed for a glowing cyber-aesthetic.
-- 📡 **Cyber HUD Overlay:** Custom CRT scanlines, a perspective grid, bracket frame accents, and real-time interface metadata featuring *DeniseGz*.
-- 🤍 **Floating Micro-Particles:** Orbiting heart glyphs and digital data bits drifting seamlessly around the main core.
-- ⚡ **Lightweight & Standalone:** Zero external dependencies; runs directly in standard Web Browsers and Google Colab environments.
+- ⚙️ **Persistent 3D Heart Mesh:** High-density point structure formed entirely by *"i love you"* text phrases.
+- 🎀 **Soft Pastel Pink Aesthetic:** Delicately styled and visually refined pastel pink tones.
+- 📡 **Cyber HUD Overlay:** CRT scanlines, holographic grid, corner frame markers, and metrics displaying the name *DeniseGz*.
+- 🤍 **Floating Micro-Particles:** Mini hearts and digital data bits drifting around the main core.
+- ⚡ **Lightweight & Standalone:** Requires no external dependencies; runs directly in HTML5 or Google Colab.
 
 ---
 
@@ -55,16 +55,4 @@
 
 ---
 
-## 🚀 How to Run
-
-### 1. Web Preview (GitHub Pages)
-Check out the live interactive animation directly in your browser:  
-👉 **[Live Demo](https://denisegz.github.io/SoftCyberHeart/)**
-
-### 2. In Google Colab
-Open `SoftCyberHeart.ipynb` and execute the code cell:
-```python
-from IPython.display import HTML
-# Renders the embedded HTML5 Canvas app
-
-</div>
+*Designed and developed by DeniseGz © 2026*
