@@ -1,69 +1,70 @@
 <div align="center">
 
-# ♡ SOFT CYBER HEART ♡
+# ♡ Soft Cyber Heart ♡
 
-<p align="center">
-  <strong><code>AN INTERACTIVE 3D CANVAS ANIMATION RENDERED IN A SOFT PINK CYBERPUNK AESTHETIC.</code></strong>
-</p>
+  <p align="center">
+    <strong>An interactive 3D Canvas animation rendered in a Soft Pink Cyberpunk aesthetic.</strong>
+  </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/AUTHOR-DENISEGZ-ffb3cf?style=for-the-badge&logoColor=000&color=ffb3cf" alt="Author DeniseGz" />
-  <img src="https://img.shields.io/badge/STATUS-ACTIVE_v2.6-ffc2d6?style=for-the-badge&logoColor=000&color=ffc2d6" alt="Status" />
-  <img src="https://img.shields.io/badge/LICENSE-MIT-ffe3ed?style=for-the-badge&logoColor=000&color=ffe3ed" alt="License" />
-</p>
+  <p align="center">
+    <img src="https://img.shields.io/badge/Author-DeniseGz-ffb3cf?style=for-the-badge&logoColor=000&color=ffb3cf" alt="Author DeniseGz" />
+    <img src="https://img.shields.io/badge/Status-Active_v2.6-ffc2d6?style=for-the-badge&logoColor=000&color=ffc2d6" alt="Status" />
+    <img src="https://img.shields.io/badge/License-MIT-ffe3ed?style=for-the-badge&logoColor=000&color=ffe3ed" alt="License" />
+  </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-FFB3CF?style=flat-square&logo=html5&logoColor=black" />
-  <img src="https://img.shields.io/badge/CSS3-FFC2D6?style=flat-square&logo=css3&logoColor=black" />
-  <img src="https://img.shields.io/badge/JAVASCRIPT-FFE3ED?style=flat-square&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/GOOGLE_COLAB-FFCCD5?style=flat-square&logo=googlecolab&logoColor=black" />
-  <img src="https://img.shields.io/badge/AESTHETIC-SOFT_PINK_CYBER-FFB3CF?style=flat-square&logoColor=black" />
-</p>
+  <p align="center">
+    <img src="https://img.shields.io/badge/HTML5-FFB3CF?style=flat-square&logo=html5&logoColor=black" />
+    <img src="https://img.shields.io/badge/CSS3-FFC2D6?style=flat-square&logo=css3&logoColor=black" />
+    <img src="https://img.shields.io/badge/JavaScript-FFE3ED?style=flat-square&logo=javascript&logoColor=black" />
+    <img src="https://img.shields.io/badge/Google_Colab-FFCCD5?style=flat-square&logo=googlecolab&logoColor=black" />
+    <img src="https://img.shields.io/badge/Aesthetic-Soft_Pink_Cyber-FFB3CF?style=flat-square&logoColor=black" />
+  </p>
 
-<code>CREATED & MAINTAINED WITH ♡ BY <strong>DENISEGZ</strong></code>
+  <sub>Created & Maintained with ♡ by <strong>DeniseGz</strong></sub>
 
 ---
 
 </div>
 
-## 🌸 OVERVIEW
+## 🌸 Overview
 
-<div font-family="monospace">
+**Soft Cyber Heart** is an interactive 3D Canvas visual animation created by **DeniseGz**. It seamlessly blends a retro-futuristic *cyberpunk/sci-fi* HUD theme with a delicate *soft pastel pink* palette (`#ffb3cf`).
 
-<code>
-Soft Cyber Heart is a standalone interactive 3D Canvas visualization created by DeniseGz.
-It seamlessly combines a futuristic cyberpunk/sci-fi aesthetic with soft pastel pink tones (#ffb3cf).
-</code>
-
-</div>
-
-> `[SYS_MSG]: "The only non-zero deviance" — denisegz v2.6`
+> *"The only non-zero deviance"* — `denisegz v2.6`
 
 ---
 
-## ✨ FEATURES & GADGETS
+## ✨ Features & Gadgets
 
-- ⚙️ <code><b>PERSISTENT 3D HEART MESH:</b> Dense high-precision structure built from repeating "i love you" parametric typography.</code>
-- 🎀 <code><b>SOFT PASTEL PINK AESTHETIC:</b> Delicately tuned color palette designed for a sleek, glowing visual experience.</code>
-- 📡 <code><b>CYBER HUD OVERLAY:</b> CRT scanline effects, a holographic perspective grid, corner targeting brackets, and custom telemetry metrics.</code>
-- 🤍 <code><b>FLOATING MICRO-PARTICLES:</b> Ambient orbiting mini hearts and data bits swirling in 3D space.</code>
-- ⚡ <code><b>LIGHTWEIGHT & STANDALONE:</b> Zero external dependencies — runs smoothly in any HTML5 browser or Google Colab environment.</code>
+- ⚙️ **Persistent 3D Heart Mesh:** High-density parametric point formation built entirely from rendered *"i love you"* text strings.
+- 🎀 **Soft Pastel Pink Aesthetic:** Visually refined pastel palette designed for a glowing cyber-aesthetic.
+- 📡 **Cyber HUD Overlay:** Custom CRT scanlines, a perspective grid, bracket frame accents, and real-time interface metadata featuring *DeniseGz*.
+- 🤍 **Floating Micro-Particles:** Orbiting heart glyphs and digital data bits drifting seamlessly around the main core.
+- ⚡ **Lightweight & Standalone:** Zero external dependencies; runs directly in standard Web Browsers and Google Colab environments.
 
 ---
 
-## 🛠️ TECH STACK & TOOLS
+## 🛠️ Tech Stack & Tools
 
-| TOOL / TECH | USAGE | STYLE / COLOR |
+| Tool / Tech | Usage | Style / Color |
 | :--- | :--- | :--- |
-| `HTML5 Canvas` | `3D Perspective Projection & Rendering` | `Soft Pink (#ffb3cf)` |
-| `Vanilla JavaScript` | `Animation Loop & Particle Physics` | `Pastel Pink (#ffd1e3)` |
-| `CSS3` | `CRT Scanlines & HUD Interface Overlay` | `Blush Pink (#ffe3ed)` |
-| `Google Colab / Jupyter` | `Python Inline HTML Display Engine` | `Rose Pink (#ffccd5)` |
+| **HTML5 Canvas** | 3D Perspective Projection & Rendering | `Soft Pink (#ffb3cf)` |
+| **Vanilla JavaScript** | Animation Loop & Particle Physics | `Pastel Pink (#ffd1e3)` |
+| **CSS3** | CRT Scanlines & HUD Interface Overlay | `Blush Pink (#ffe3ed)` |
+| **Google Colab / Jupyter** | Python Inline HTML Display Engine | `Rose Pink (#ffccd5)` |
 
 ---
 
-<div align="center">
+## 🚀 How to Run
 
-<code>DESIGNED AND DEVELOPED BY <strong>DENISEGZ</strong> © 2026</code>
+### 1. Web Preview (GitHub Pages)
+Check out the live interactive animation directly in your browser:  
+👉 **[Live Demo](https://denisegz.github.io/SoftCyberHeart/)**
+
+### 2. In Google Colab
+Open `SoftCyberHeart.ipynb` and execute the code cell:
+```python
+from IPython.display import HTML
+# Renders the embedded HTML5 Canvas app
 
 </div>
